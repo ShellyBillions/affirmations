@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Affirmation Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background: #f5f5f5;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background: #6a0dad;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .affirmation {
+      margin-top: 20px;
+      font-size: 22px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>✨ Affirmation Generator ✨</h1>
+  <button onclick="newAffirmation()">Give Me an Affirmation</button>
+  <div class="affirmation" id="output"></div>
+
+  <script>
+    const affirmations = [
+      "I am confident and powerful.",
+      "Abundance flows easily into my life.",
+      "I release fear and embrace love.",
+      "Every day I grow stronger and wiser.",
+      "My energy attracts success."
+    ];
+
+    function newAffirmation() {
+      const random = Math.floor(Math.random() * affirmations.length);
+      document.getElementById("output").textContent = affirmations[random];
+    }
+  </script>
+</body>
+</html>
