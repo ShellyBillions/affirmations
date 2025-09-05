@@ -2,42 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Affirmation Generator</title>
+  <title>Seductra Affirmations ✨</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Georgia', serif;
       text-align: center;
       margin-top: 100px;
-      background: #f5f5f5;
+      background: linear-gradient(135deg, #1a001f, #330033);
+      color: #f5e6ff;
+    }
+    h1 {
+      font-size: 36px;
+      color: #ff4dd2;
+      text-shadow: 0 0 15px #ff1aff, 0 0 30px #ff66ff;
     }
     button {
-      padding: 12px 24px;
-      font-size: 16px;
-      background: #6a0dad;
+      padding: 14px 30px;
+      font-size: 18px;
+      background: #6600cc;
       color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 25px;
       cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px #9933ff, 0 0 30px #cc66ff;
+    }
+    button:hover {
+      background: #9933ff;
+      box-shadow: 0 0 20px #ff33cc, 0 0 40px #ff66ff;
     }
     .affirmation {
-      margin-top: 20px;
+      margin-top: 25px;
       font-size: 22px;
-      color: #333;
+      font-style: italic;
+      color: #ffe6ff;
+      text-shadow: 0 0 10px #cc66ff;
     }
   </style>
 </head>
 <body>
-  <h1>✨ Affirmation Generator ✨</h1>
-  <button onclick="newAffirmation()">Give Me an Affirmation</button>
+  <h1>✨ Seductra Affirmations ✨</h1>
+  <button onclick="newAffirmation()">Give Me Power</button>
   <div class="affirmation" id="output"></div>
 
   <script>
     const affirmations = [
-      "I am confident and powerful.",
-      "Abundance flows easily into my life.",
-      "I release fear and embrace love.",
-      "Every day I grow stronger and wiser.",
-      "My energy attracts success."
+      "I radiate magnetic energy and power.",
+      "Abundance flows to me effortlessly.",
+      "My confidence is irresistible.",
+      "I attract success and luxury with ease.",
+      "I am the embodiment of elegance and strength."
     ];
 
     function newAffirmation() {
